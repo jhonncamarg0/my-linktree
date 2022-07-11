@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    --bg-color: whitesmoke;
+    --text-color: black;
+    --primary-color: purple;
+    --primary-color-hover: darkviolet;
+}
+body.pan {
+    --bg-color: darkturquoise;
+    --text-color: black;
+    --primary-color: darkcyan;
+    --primary-color-hover: lightseagreen;
+}
+body.bitz {
+    --bg-color: darkslategray;
+    --text-color: black;
+    --primary-color: darkred;
+    --primary-color-hover: lightcoral;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    width: 100%;
+}
+img.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 3.5px;
+    border: var(--primary-color) solid 3.5px;
+}
+h1 {
+    font-size: 30px;
+    color: var(--text-color);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+p.username {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 16px;
+}
+ul {
+    list-style: none;
+    margin: 48px 0;
+}
+ul li a {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    transition: background 300ms;
+}
+ul li a:hover {
+    background-color: var(--primary-color-hover);
+}
+a {
+    text-decoration: none;
+}
+footer {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--text-color);
+    opacity: 0.8;
+    transition: background 300ms;
+}
+footer a {
+    color: var(--text-color);
+}
+footer a:hover {
+    color: var(--primary-color);
+}
+div.box {
+    text-align: center;
+    width: 300px;
+    margin: 26px auto;
+}
